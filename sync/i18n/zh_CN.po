@@ -1,0 +1,2021 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sync
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0-20210903\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-02 00:38+0000\n"
+"PO-Revision-Date: 2022-08-02 08:38:59+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: MonoDevelop Gettext addin\n"
+
+#. module: sync
+#: model:ir.module.category,description:sync.module_category_sync
+msgid ""
+"\n"
+"                User: read-only access;\n"
+"            Developer: restricted write access;\n"
+"            Administrator: same as Developer, but access to secure staff.\n"
+"            "
+msgstr ""
+"\n"
+"用户：只读访问;\n"
+"            开发人员：受限制的写入权限;\n"
+"            管理员：与开发人员相同，但有权访问安全员工。\n"
+"            "
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_project__common_code
+msgid ""
+"\n"
+"        A place for helpers and constants.\n"
+"\n"
+"        You can add here a function or variable, that don't start with "
+"underscore and then reuse it in task's code.\n"
+"    "
+msgstr ""
+"\n"
+"一个帮助者和常量的地方。\n"
+"\n"
+"您可以在此处添加不以下划线开头的函数或变量，然后在任务代码中重用它。\n"
+"    "
+
+#. module: sync
+#: code:addons\sync\models\sync_link.py:0
+#, python-format
+msgid "%s link already exists: %s=%s, %s=%s"
+msgstr "%s 链接已存在： %s=%s， %s=%s"
+
+#. module: sync
+#: code:addons\sync\models\sync_trigger_cron.py:0
+#, python-format
+msgid "%s: every %s %s"
+msgstr "%s： 每 %s %s"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid ". It could be either:"
+msgstr ".它可以是："
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid ""
+"<br/>\n"
+"                                Hint: to add manual triggers navigate to "
+"corresponding\n"
+"                                Task via \"Available Tasks\" tab"
+msgstr ""
+"<br/>\n"
+"                                提示：要添加手动触发器，请导航到相应的\n"
+"                                通过“可用任务”选项卡完成任务"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid ""
+"<br/>\n"
+"                        Generation time:"
+msgstr ""
+"<br/>\n"
+"                        生成时间："
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid ""
+"<em>\n"
+"                                    # Put here a code that will be accesable "
+"from any\n"
+"                                    task code\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    #在这里放一个代码，可以从任何访问\n"
+"                                    任务代码\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid ""
+"<em>\n"
+"                                    # The code may use functions and "
+"variables from\n"
+"                                    Project's Shared Code\n"
+"                                </em>\n"
+"                                <em class=\"oe_edit_only\">\n"
+"                                    <br/>\n"
+"                                    # Hint: if you miss some code editor "
+"features, just\n"
+"                                    copy the code to your lovely editor, "
+"update there\n"
+"                                    and paste here\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    # 代码可以使用来自\n"
+"                                    项目的共享代码\n"
+"                                </em>\n"
+"                                <em class=“oe_edit_only”>\n"
+"                                    <br/>\n"
+"                                    #提示：如果您错过了一些代码编辑器功能，只需\n"
+"                                    将代码复制到您可爱的编辑器，在那里更新\n"
+"                                    并粘贴到此处\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid ""
+"<em>\n"
+"                                    <code>handle_button()</code>\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    <code>handle_button（）</code>\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid ""
+"<em>\n"
+"                                    <code>handle_cron()</code>\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    <code>handle_cron（）</code>\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid ""
+"<em>\n"
+"                                    <code>handle_db(records)</code>\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    <code>handle_db（记录）</code>\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid ""
+"<em>\n"
+"                                    <code>handle_webhook(httprequest)</code>\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    <code>handle_webhook</code>\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid ""
+"<em>\n"
+"                                    Hint: Cron, Webhooks and DB Triggers are "
+"not\n"
+"                                    executed\n"
+"                                    until both the Project and the Task are "
+"active (i.e.\n"
+"                                    not Archived)\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    提示：Cron、Webhooks 和 DB Trigger 不是\n"
+"                                    执行\n"
+"                                    直到项目和任务都处于活动状态（即\n"
+"                                    未存档）\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid ""
+"<em>\n"
+"                                    Secret parameters values are available "
+"for Sync\n"
+"                                    Administrators only (click on a line to "
+"see the\n"
+"                                    value)\n"
+"                                </em>"
+msgstr ""
+"<em>\n"
+"                                    密钥参数值可用于同步\n"
+"                                    仅限管理员（单击一行以查看\n"
+"                                    值）\n"
+"                                </em>"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_form
+msgid ""
+"<span class=\"oe_grey oe_inline\">\n"
+"                                    The job is restarted only if code raises\n"
+"                                    <code>RetryableJobError</code>\n"
+"                                    exception. On\n"
+"                                    manual restarting the counter is reset.\n"
+"                                </span>"
+msgstr ""
+"<跨度类=“oe_grey oe_inline”>\n"
+"                                    仅当代码引发时，作业才会重新启动\n"
+"                                    <code>可重试作业错误</code>\n"
+"                                    例外。上\n"
+"                                    手动重新启动计数器即被重置。\n"
+"                                </span>"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_project_param__initial_value
+#: model:ir.model.fields,help:sync.field_sync_project_param_mixin__initial_value
+#: model:ir.model.fields,help:sync.field_sync_project_secret__initial_value
+#: model:ir.model.fields,help:sync.field_sync_project_text__initial_value
+msgid ""
+"A virtual field that, during writing, stores the value in the value field, "
+"but only if it is empty.              It's used during module upgrade to "
+"prevent overwriting parameter values. "
+msgstr "一个虚拟字段，在写入过程中，将值存储在值字段中，但仅当该字段为空时。             它在模块升级期间使用，以防止覆盖参数值。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__help
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__help
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__help
+msgid "Action Description"
+msgstr "操作说明"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__name
+msgid "Action Name"
+msgstr "操作名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__action_server_id
+msgid "Action Server"
+msgstr "操作服务器"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__state
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__state
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__state
+msgid "Action To Do"
+msgstr "要执行的操作"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__type
+msgid "Action Type"
+msgstr "操作类型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__active
+#: model:ir.model.fields,field_description:sync.field_sync_task__active
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__active
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__active
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__active
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__active
+#: model_terms:ir.ui.view,arch_db:sync.sync_trigger_cron_view_form
+msgid "Active"
+msgstr "积极"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_type_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_type_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_type_id
+msgid "Activity"
+msgstr "活动"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_user_type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_user_type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_user_type
+msgid "Activity User Type"
+msgstr "活动用户类型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__channel_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__channel_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__channel_ids
+msgid "Add Channels"
+msgstr "添加频道"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__partner_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__partner_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__partner_ids
+msgid "Add Followers"
+msgstr "添加关注者"
+
+#. module: sync
+#: model:res.groups,name:sync.sync_group_manager
+msgid "Administrator"
+msgstr "管理员"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__filter_domain
+msgid "Apply on"
+msgstr "适用于"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__author_name
+msgid "Author Name"
+msgstr "作者姓名"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__author_url
+msgid "Author URL"
+msgstr "作者网址"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__automation_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__automation_id
+msgid "Automation"
+msgstr "自动化"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_trigger_automation_action_from_project
+msgid "Automation Triggers"
+msgstr "自动化触发器"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Available Tasks"
+msgstr "可用任务"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Available Triggers"
+msgstr "可用触发器"
+
+#. module: sync
+#: model:ir.model,name:sync.model_base
+msgid "Base"
+msgstr "基础"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__filter_pre_domain
+msgid "Before Update Domain"
+msgstr "更新域之前"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__binding_model_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__binding_model_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__binding_model_id
+msgid "Binding Model"
+msgstr "绑定模型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__binding_type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__binding_type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__binding_type
+msgid "Binding Type"
+msgstr "绑定类型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__binding_view_types
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__binding_view_types
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__binding_view_types
+msgid "Binding View Types"
+msgstr "绑定视图类型"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_trigger_button_action_from_project
+msgid "Button Triggers"
+msgstr "按钮触发器"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Cancel"
+msgstr "取消"
+
+#. module: sync
+#: code:addons\sync\models\sync_link.py:0
+#, python-format
+msgid "Cannot find value for %s. Found: %s and %s"
+msgstr "找不到 %s 的值。已找到：%s 和 %s"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__child_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__child_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__child_ids
+msgid "Child Actions"
+msgstr "子操作"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__child_ids
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__child_ids
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__child_ids
+msgid ""
+"Child server actions that will be executed. Note that the last return "
+"returned action value will be used as global return value."
+msgstr "将执行的子服务器操作。请注意，最后返回的操作值将用作全局返回值。"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Close"
+msgstr "关闭"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__code
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Code"
+msgstr "法典"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__common_code
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Common Code"
+msgstr "通用代码"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Configure"
+msgstr "配置"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__copyright_years
+msgid "Copyright Year"
+msgstr "版权年份"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_link__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_task__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__create_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__create_uid
+msgid "Created by"
+msgstr "创建者"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_link__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_project__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_task__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__create_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__create_date
+msgid "Created on"
+msgstr "创建于"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__cron_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__cron_id
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Cron"
+msgstr "克朗"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_cron
+msgid "Cron Trigger"
+msgstr "克隆触发器"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_trigger_cron_action_from_project
+msgid "Cron Triggers"
+msgstr "Cron 触发器"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Crons"
+msgstr "克朗斯"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__retry
+msgid "Current try"
+msgstr "当前试用"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_automation
+msgid "DB Trigger"
+msgstr "数据库触发器"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "DB Triggers"
+msgstr "数据库触发器"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__ir_logging__type__data_out
+msgid "Data Transmission"
+msgstr "数据传输"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__trg_date_range
+msgid ""
+"Delay after the trigger date.\n"
+"                                    You can put a negative number if you "
+"need a delay before the\n"
+"                                    trigger date, like sending a reminder 15 "
+"minutes before a meeting."
+msgstr ""
+"触发日期之后的延迟。\n"
+"                                    如果您需要在\n"
+"                                    触发日期，例如在会议前 15 分钟发送提醒。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trg_date_range
+msgid "Delay after trigger date"
+msgstr "触发日期后的延迟"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trg_date_range_type
+msgid "Delay type"
+msgstr "延迟类型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__description
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__description
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__description
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__description
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__name
+msgid "Description"
+msgstr "描述"
+
+#. module: sync
+#: model:res.groups,name:sync.sync_group_dev
+msgid "Developer"
+msgstr "开发 人员"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_ir_actions_server__display_name
+#: model:ir.model.fields,field_description:sync.field_ir_logging__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_job__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_link__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_project__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_task__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin_actions__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin_model_id__display_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__url
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__url
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__url
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__url
+msgid "Documentation"
+msgstr "文档"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_job__state__done
+msgid "Done"
+msgstr "做"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_job__state__done_warning
+msgid "Done With Warnings"
+msgstr "完成警告"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_search
+msgid "Done jobs"
+msgstr "已完成的作业"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_date_deadline_range
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_date_deadline_range
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_date_deadline_range
+msgid "Due Date In"
+msgstr "到期日"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_date_deadline_range_type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_date_deadline_range_type
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_date_deadline_range_type
+msgid "Due type"
+msgstr "到期类型"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "E.g. Legacy Migration"
+msgstr "例如，传统迁移"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "E.g. Sync Products"
+msgstr "例如同步产品"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__template_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__template_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__template_id
+msgid "Email Template"
+msgstr "电子邮件模板"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__active_button_ids
+msgid "Enabled Buttons"
+msgstr "启用的按钮"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__active_cron_ids
+#: model:ir.model.fields,help:sync.field_sync_project__trigger_cron_count
+msgid "Enabled Crons"
+msgstr "启用克隆恩斯"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__active_automation_ids
+#: model:ir.model.fields,help:sync.field_sync_project__trigger_automation_count
+msgid "Enabled DB Triggers"
+msgstr "已启用的数据库触发器"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__active_webhook_ids
+#: model:ir.model.fields,help:sync.field_sync_project__trigger_webhook_count
+msgid "Enabled Webhooks"
+msgstr "已启用的网络钩子"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_job__state__enqueued
+msgid "Enqueued"
+msgstr "已排队"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_search
+msgid "Enqueued jobs"
+msgstr "排队的作业"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+msgid "Errors"
+msgstr "错误"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__eval_context_description
+msgid "Eval Context Description"
+msgstr "评估上下文描述"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Evaluation Context"
+msgstr "评估上下文"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__eval_context
+msgid "Evaluation context"
+msgstr "评估上下文"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_trigger_cron_view_form
+msgid "Execute Every"
+msgstr "执行间隔"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Export"
+msgstr "出口"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Export Settings"
+msgstr "导出设置"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_make_module_action
+msgid "Export to XML"
+msgstr "导出为 XML"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__xml_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__xml_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__xml_id
+msgid "External ID"
+msgstr "外部标识"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_link_view_search
+msgid "External Links"
+msgstr "外部链接"
+
+#. module: sync
+#: code:addons\sync\models\sync_project_demo.py:0
+#, python-format
+msgid "External Odoo Credentials are not set"
+msgstr "未设置外部 Odoo 凭据"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_job__state__failed
+msgid "Failed"
+msgstr "失败"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_search
+msgid "Failed jobs"
+msgstr "失败的作业"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__on_change_field_ids
+msgid "Fields that trigger the onchange."
+msgstr "触发更改的字段。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__data
+msgid "File"
+msgstr "文件"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__name
+msgid "File Name"
+msgstr "文件名"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__name2
+msgid "File Name Txt"
+msgstr "文件名 Txt"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__data2
+msgid "File Txt"
+msgstr "文件 Txt"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__func_string
+msgid "Function"
+msgstr "功能"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Generate Token"
+msgstr "生成令牌"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_make_module
+msgid "Generating XML data file for a module"
+msgstr "为模块生成 XML 数据文件"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+#: model_terms:ir.ui.view,arch_db:sync.sync_link_view_search
+msgid "Group By"
+msgstr "分组依据"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__groups_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__groups_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__groups_id
+msgid "Groups"
+msgstr "组"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Here is the xml file to be put into a module:"
+msgstr "下面是要放入模块中的 xml 文件："
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__numbercall
+msgid ""
+"How many times the method is called,\n"
+"a negative number indicates no limit."
+msgstr ""
+"调用该方法的次数，\n"
+"负数表示无限制。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_ir_actions_server__id
+#: model:ir.model.fields,field_description:sync.field_ir_logging__id
+#: model:ir.model.fields,field_description:sync.field_sync_job__id
+#: model:ir.model.fields,field_description:sync.field_sync_link__id
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__id
+#: model:ir.model.fields,field_description:sync.field_sync_project__id
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__id
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__id
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__id
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__id
+#: model:ir.model.fields,field_description:sync.field_sync_task__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin_actions__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin_model_id__id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__id
+msgid "ID"
+msgstr "编号"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__xml_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__xml_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__xml_id
+msgid "ID of the action if defined in a XML file"
+msgstr "操作的 ID（如果在 XML 文件中定义）"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "IT Projects Labs"
+msgstr "信息技术项目实验室"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__filter_domain
+msgid ""
+"If present, this condition must be satisfied before executing the action "
+"rule."
+msgstr "如果存在，则必须在执行操作规则之前满足此条件。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__filter_pre_domain
+msgid ""
+"If present, this condition must be satisfied before the update of the record."
+msgstr "如果存在，则必须在更新记录之前满足此条件。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__in_progress
+msgid "In Progress"
+msgstr "进行中"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__initial_value
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__initial_value
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__initial_value
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__initial_value
+msgid "Initial Value"
+msgstr "初始值"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__interval_number
+msgid "Interval Number"
+msgstr "间隔编号"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__interval_type
+msgid "Interval Unit"
+msgstr "间隔单位"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Ivan Yelizariev"
+msgstr "伊万·叶利扎里耶夫"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__job_ids
+#: model:ir.model.fields,field_description:sync.field_sync_task__job_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__job_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__job_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__job_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin__job_ids
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__job_ids
+msgid "Job"
+msgstr "工作"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__job_count
+#: model:ir.model.fields,field_description:sync.field_sync_task__job_count
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__job_count
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__job_count
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__job_count
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin__job_count
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__job_count
+msgid "Job Count"
+msgstr "作业计数"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.ir_logging_action_from_job
+msgid "Job Logs"
+msgstr "作业日志"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_job_action
+#: model:ir.ui.menu,name:sync.sync_job_menu_action
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Jobs"
+msgstr "工作"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__key
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__key
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__key
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__key
+msgid "Key"
+msgstr "钥匙"
+
+#. module: sync
+#: model:ir.model.constraint,message:sync.constraint_sync_project_param_key_uniq
+#: model:ir.model.constraint,message:sync.constraint_sync_project_param_mixin_key_uniq
+#: model:ir.model.constraint,message:sync.constraint_sync_project_secret_key_uniq
+#: model:ir.model.constraint,message:sync.constraint_sync_project_text_key_uniq
+msgid "Key must be unique."
+msgstr "密钥必须是唯一的。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__lastcall
+msgid "Last Execution Date"
+msgstr "上次执行日期"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_ir_actions_server____last_update
+#: model:ir.model.fields,field_description:sync.field_ir_logging____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_job____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_link____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_make_module____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_project____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_project_param____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_project_text____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_task____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin_actions____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin_model_id____last_update
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook____last_update
+msgid "Last Modified on"
+msgstr "最后修改日"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__last_run
+msgid "Last Run"
+msgstr "上次运行"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_link__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_task__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__write_uid
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__write_uid
+msgid "Last Updated by"
+msgstr "最后更新者"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_link__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_project__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_task__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__write_date
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__write_date
+msgid "Last Updated on"
+msgstr "最后更新于"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__least_delay_msg
+msgid "Least Delay Msg"
+msgstr "最小延迟消息"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__license_line
+msgid "License"
+msgstr "许可证"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__link_field_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__link_field_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__link_field_id
+msgid "Link Field"
+msgstr "链接字段"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_link_action
+#: model:ir.ui.menu,name:sync.sync_link_menu_action
+msgid "Links"
+msgstr "链接"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__log_ids
+#: model:ir.model.fields,field_description:sync.field_sync_project__log_ids
+#: model:ir.model.fields,field_description:sync.field_sync_task__log_ids
+msgid "Log"
+msgstr "日志"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__log_count
+#: model:ir.model.fields,field_description:sync.field_sync_project__log_count
+#: model:ir.model.fields,field_description:sync.field_sync_task__log_count
+msgid "Log Count"
+msgstr "日志计数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__sms_mass_keep_log
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__sms_mass_keep_log
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__sms_mass_keep_log
+msgid "Log as Note"
+msgstr "记录为注释"
+
+#. module: sync
+#: model:ir.model,name:sync.model_ir_logging
+msgid "Logging"
+msgstr "日志"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.ir_logging_action
+#: model:ir.ui.menu,name:sync.ir_logging_menu_action
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Logs"
+msgstr "原木"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_button
+msgid "Manual Trigger"
+msgstr "手动触发"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__trigger_button_ids
+#: model:ir.model.fields,field_description:sync.field_sync_task__button_ids
+#: model:ir.model.fields,help:sync.field_sync_project__trigger_button_count
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Manual Triggers"
+msgstr "手动触发器"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__max_retries_str
+msgid "Max Retries Str"
+msgstr "最大重试次数 Str"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_ir_logging__message_short
+msgid "Message..."
+msgstr "消息。。。"
+
+#. module: sync
+#: code:addons\sync\models\sync_link.py:0
+#, python-format
+msgid "Mixing apples and oranges: %s and %s"
+msgstr "混合苹果和橙子：%s和%s"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_mixin
+msgid "Mixing for trigger models"
+msgstr "触发器模型的混合"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_mixin_actions
+msgid "Mixing for triggers that inherit actions"
+msgstr "继承操作的触发器的混合"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_mixin_model_id
+msgid "Mixing to fill model_id field"
+msgstr "混合以填充model_id字段"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__model_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__model_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__model_id
+msgid "Model"
+msgstr "型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__model_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__model_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__model_name
+msgid "Model Name"
+msgstr "型号名称"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__crud_model_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__crud_model_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__crud_model_id
+msgid ""
+"Model for record creation / update. Set this field only to specify a "
+"different model than the base model."
+msgstr "记录创建/更新的模型。仅设置此字段以指定与基本模型不同的模型。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__model_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__model_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__model_id
+msgid "Model on which the server action runs."
+msgstr "运行服务器操作的模型。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__module
+msgid "Module Technical Name"
+msgstr "模块技术名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__name
+#: model:ir.model.fields,field_description:sync.field_sync_task__name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__cron_name
+msgid "Name"
+msgstr "名字"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__nextcall
+msgid "Next Execution Date"
+msgstr "下一个执行日期"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__nextcall
+msgid "Next planned execution date for this job."
+msgstr "此作业的下一个计划执行日期。"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+msgid "Non-debug"
+msgstr "非调试"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_note
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_note
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_note
+msgid "Note"
+msgstr "注意"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__numbercall
+msgid "Number of Calls"
+msgstr "呼叫次数"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_link_view_search
+msgid "Odoo Links"
+msgstr "Odoo 链接"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__model
+#: model_terms:ir.ui.view,arch_db:sync.sync_link_view_search
+msgid "Odoo Model"
+msgstr "Odoo 模型"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_project__eval_context__odoo2odoo
+msgid "Odoo2odoo"
+msgstr "Odoo2odoo"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__on_change_field_ids
+msgid "On Change Fields Trigger"
+msgstr "“更改字段时”触发器"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__help
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__help
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__help
+msgid ""
+"Optional help text for the users with a description of the target view, such "
+"as its usage and purpose."
+msgstr "为用户提供的可选帮助文本，其中包含目标视图的描述，例如其用法和用途。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__param_ids
+msgid "Param"
+msgstr "参数"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Parameters"
+msgstr "参数"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Params"
+msgstr "参数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__parent_job_id
+msgid "Parent Job"
+msgstr "父作业"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_job__state__pending
+msgid "Pending"
+msgstr "待定"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_search
+msgid "Pending jobs"
+msgstr "待处理的作业"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__lastcall
+msgid ""
+"Previous time the cron ran successfully, provided to the job through the "
+"context on the `lastcall` key"
+msgstr "上一次 cron 成功运行，通过“lastcall”键上的上下文提供给作业"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__priority
+msgid "Priority"
+msgstr "优先权"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_base_automation__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_ir_actions_server__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_ir_cron__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_ir_logging__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_sync_job__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_task__project_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__sync_project_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__sync_project_id
+msgid "Project"
+msgstr "项目"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_job_action_from_project
+msgid "Project Jobs"
+msgstr "项目职位"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.ir_logging_action_from_project
+msgid "Project Logs"
+msgstr "项目日志"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_project_param
+msgid "Project Parameter"
+msgstr "项目参数"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_project_secret
+msgid "Project Secret Parameter"
+msgstr "项目机密参数"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_project_text
+msgid "Project Text Parameter"
+msgstr "项目文本参数"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__link_field_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__link_field_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__link_field_id
+msgid ""
+"Provide the field used to link the newly created record on the record used by "
+"the server action."
+msgstr "提供用于在服务器操作使用的记录上链接新创建的记录的字段。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__code
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__code
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__code
+msgid "Python Code"
+msgstr "Python Code"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__queue_job_id
+msgid "Queue Job"
+msgstr "队列作业"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__queue_job_state
+msgid "Queue Job State"
+msgstr "队列作业状态"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__ref1
+msgid "Ref 1"
+msgstr "参考文献 1"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__ref2
+msgid "Ref 2"
+msgstr "参考文献 2"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_link_view_search
+msgid "Reference"
+msgstr "参考"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_form
+msgid "Refresh Form"
+msgstr "刷新表单"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_link_view_search
+msgid "Relation"
+msgstr "关系"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__relation
+msgid "Relation Name"
+msgstr "关系名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__doall
+msgid "Repeat Missed"
+msgstr "重复错过"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__interval_number
+msgid "Repeat every x."
+msgstr "每隔 x 重复一次。"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_link
+msgid "Resource Links"
+msgstr "资源链接"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__ir_logging__type__data_in
+msgid "Response"
+msgstr "响应"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_user_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_user_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_user_id
+msgid "Responsible"
+msgstr "负责"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_form
+msgid "Restart Failed Job"
+msgstr "重新启动失败的作业"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_trigger_cron_view_form
+msgid "Run Manually"
+msgstr "手动运行"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Run Now"
+msgstr "立即运行"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__sms_template_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__sms_template_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__sms_template_id
+msgid "SMS Template"
+msgstr "短信模板"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__user_id
+msgid "Scheduler User"
+msgstr "调度程序用户"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__secret_ids
+msgid "Secret"
+msgstr "秘密"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Secrets"
+msgstr "秘密"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__sequence
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__sequence
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__sequence
+msgid "Sequence"
+msgstr "序列"
+
+#. module: sync
+#: model:ir.model,name:sync.model_ir_actions_server
+msgid "Server Action"
+msgstr "服务器动作"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__action_server_id
+msgid "Server Actions"
+msgstr "服务器操作"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__ir_actions_server_id
+msgid "Server action"
+msgstr "服务器操作"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__binding_model_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__binding_model_id
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__binding_model_id
+msgid ""
+"Setting a value makes this action available in the sidebar for the given "
+"model."
+msgstr "设置值将使此操作在给定模型的边栏中可用。"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Sincerely,"
+msgstr "真诚地"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__doall
+msgid ""
+"Specify if missed occurrences should be executed when the server restarts."
+msgstr "指定在服务器重新启动时是否应执行错过的事件。"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_job__state__started
+msgid "Started"
+msgstr "开始"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_search
+msgid "Started jobs"
+msgstr "已开始的作业"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_form
+msgid "Starts:"
+msgstr "开始："
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__state
+#: model:ir.model.fields,field_description:sync.field_sync_make_module__state
+msgid "State"
+msgstr "州"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_job_view_form
+msgid "Sub Jobs"
+msgstr "子职位"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__job_ids
+msgid "Sub jobs"
+msgstr "子职位"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_summary
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_summary
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_summary
+msgid "Summary"
+msgstr "总结"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__date
+msgid "Sync Date"
+msgstr "同步日期"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_job
+#: model:ir.model.fields,field_description:sync.field_ir_logging__sync_job_id
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+msgid "Sync Job"
+msgstr "同步作业"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_project
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+msgid "Sync Project"
+msgstr "同步项目"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_project_action
+#: model:ir.ui.menu,name:sync.sync_project_menu_action
+msgid "Sync Projects"
+msgstr "同步项目"
+
+#. module: sync
+#: model:ir.module.category,name:sync.module_category_sync
+#: model:ir.ui.menu,name:sync.sync_menu
+msgid "Sync Studio"
+msgstr "同步工作室"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_task
+#: model:ir.model.fields,field_description:sync.field_base_automation__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_ir_actions_server__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_ir_cron__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__sync_task_id
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+msgid "Sync Task"
+msgstr "同步任务"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__code_check
+msgid "Syntax check"
+msgstr "语法检查"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__system1
+msgid "System 1"
+msgstr "系统 1"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_link__system2
+msgid "System 2"
+msgstr "系统 2"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__crud_model_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__crud_model_id
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__crud_model_id
+msgid "Target Model"
+msgstr "目标模型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__crud_model_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__crud_model_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__crud_model_name
+msgid "Target Model Name"
+msgstr "目标型号名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_ir_logging__sync_task_id
+#: model:ir.model.fields,field_description:sync.field_sync_job__task_id
+#: model:ir.model.fields,field_description:sync.field_sync_project__task_ids
+msgid "Task"
+msgstr "任务"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__task_count
+msgid "Task Count"
+msgstr "任务计数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__function
+msgid "Task Function"
+msgstr "任务功能"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_job_action_from_task
+msgid "Task Jobs"
+msgstr "任务作业"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.ir_logging_action_from_task
+msgid "Task Logs"
+msgstr "任务日志"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_task_action_from_project
+msgid "Tasks"
+msgstr "任务"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__activity_user_field_name
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__activity_user_field_name
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__activity_user_field_name
+msgid "Technical name of the user on the record"
+msgstr "记录中用户的技术名称"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__trigger_name
+#: model:ir.model.fields,help:sync.field_sync_trigger_button__trigger_name
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__trigger_name
+#: model:ir.model.fields,help:sync.field_sync_trigger_mixin__trigger_name
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__trigger_name
+msgid "Technical name to be used in task code"
+msgstr "要在任务代码中使用的技术名称"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_project__eval_context__telegram_demo
+msgid "Telegram (Demo)"
+msgstr "电报（演示）"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_project_param_mixin
+msgid "Template model for Parameters"
+msgstr "参数模板模型"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__text_param_ids
+msgid "Text Param"
+msgstr "文本参数"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+msgid "Texts"
+msgstr "文本"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__trigger_field_ids
+msgid ""
+"The action will be triggered if and only if one of these fields is updated.If "
+"empty, all fields are watched."
+msgstr "当且仅当更新了其中一个字段时，才会触发该操作。如果为空，则监视所有字段。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__website_url
+msgid "The full URL to access the server action through the website."
+msgstr "用于通过网站访问服务器操作的完整 URL。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__priority
+msgid ""
+"The priority of the job, as an integer: 0 means higher priority, 10 means "
+"lower priority."
+msgstr "作业的优先级，以整数表示：0 表示优先级较高，10 表示优先级较低。"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_project__eval_context__trello_github
+msgid "Trello & Github"
+msgstr "Trello & Github"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trigger
+msgid "Trigger"
+msgstr "触发"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__trigger_automation_id
+msgid "Trigger Automation"
+msgstr "触发自动化"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__trigger_automation_count
+msgid "Trigger Automation Count"
+msgstr "触发自动化计数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__trigger_button_id
+msgid "Trigger Button"
+msgstr "触发按钮"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__trigger_button_count
+msgid "Trigger Button Count"
+msgstr "触发按钮计数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__trigger_cron_id
+msgid "Trigger Cron"
+msgstr "触发克隆"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__trigger_cron_count
+msgid "Trigger Cron Count"
+msgstr "触发克隆计数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trg_date_id
+msgid "Trigger Date"
+msgstr "触发日期"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trigger_field_ids
+#: model_terms:ir.ui.view,arch_db:sync.sync_trigger_automation_view_form
+msgid "Trigger Fields"
+msgstr "触发字段"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__trigger_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trigger_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_button__trigger_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__trigger_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_mixin__trigger_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__trigger_name
+msgid "Trigger Name"
+msgstr "触发器名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_job__trigger_webhook_id
+msgid "Trigger Webhook"
+msgstr "触发网络钩子"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project__trigger_webhook_count
+msgid "Trigger Webhook Count"
+msgstr "触发网络挂钩计数"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_ir_logging__type
+msgid "Type"
+msgstr "类型"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__state
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__state
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__state
+msgid ""
+"Type of server action. The following values are available:\n"
+"- 'Execute Python Code': a block of python code that will be executed\n"
+"- 'Create': create a new record with new values\n"
+"- 'Update a Record': update the values of a record\n"
+"- 'Execute several actions': define an action that triggers several other "
+"server actions\n"
+"- 'Send Email': automatically send an email (Discuss)\n"
+"- 'Add Followers': add followers to a record (Discuss)\n"
+"- 'Create Next Activity': create an activity (Discuss)"
+msgstr ""
+"服务器操作的类型。以下值可用：\n"
+"- “执行Python代码”：将执行的Python代码块\n"
+"- “创建”：使用新值创建新记录\n"
+"- “更新记录”：更新记录的值\n"
+"- “执行多个操作”：定义一个触发其他多个服务器操作的操作\n"
+"- “发送电子邮件”：自动发送电子邮件（讨论）\n"
+"- “添加关注者”：将关注者添加到记录（讨论）\n"
+"- “创建下一个活动”：创建活动（讨论）"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "Update"
+msgstr "更新"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Updates token in Webhook URL"
+msgstr "更新 Webhook URL 中的令牌"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__usage
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__usage
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__usage
+msgid "Usage"
+msgstr "用法"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__activity_user_type
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__activity_user_type
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__activity_user_type
+msgid ""
+"Use 'Specific User' to always assign the same user on the next activity. Use "
+"'Generic User From Record' to specify the field name of the user to choose on "
+"the record."
+msgstr "使用“特定用户”始终在下一个活动中分配同一用户。使用“记录中的通用用户”指定要在记录上选择的用户的字段名称。"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__trg_date_calendar_id
+msgid "Use Calendar"
+msgstr "使用日历"
+
+#. module: sync
+#: model:res.groups,name:sync.sync_group_user
+msgid "User"
+msgstr "用户"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__activity_user_field_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__activity_user_field_name
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__activity_user_field_name
+msgid "User field name"
+msgstr "用户字段名称"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_project_param__value
+#: model:ir.model.fields,field_description:sync.field_sync_project_param_mixin__value
+#: model:ir.model.fields,field_description:sync.field_sync_project_secret__value
+#: model:ir.model.fields,field_description:sync.field_sync_project_text__value
+msgid "Value"
+msgstr "价值"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_automation__fields_lines
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_cron__fields_lines
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__fields_lines
+msgid "Value Mapping"
+msgstr "值映射"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.ir_logging_view_search
+msgid "Warnings"
+msgstr "警告"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_task__webhook_ids
+msgid "Webhook"
+msgstr "网络钩子"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Webhook Token"
+msgstr "网络钩子令牌"
+
+#. module: sync
+#: model:ir.model,name:sync.model_sync_trigger_webhook
+msgid "Webhook Trigger"
+msgstr "网络钩子触发器"
+
+#. module: sync
+#: model:ir.actions.act_window,name:sync.sync_trigger_webhook_action_from_project
+msgid "Webhook Triggers"
+msgstr "网络钩子触发器"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__webhook_type
+msgid "Webhook Type"
+msgstr "网钩类型"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_project_view_form
+#: model_terms:ir.ui.view,arch_db:sync.sync_task_view_form
+msgid "Webhooks"
+msgstr "网络钩子"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__website_path
+msgid "Website Path"
+msgstr "网站路径"
+
+#. module: sync
+#: model:ir.model.fields,field_description:sync.field_sync_trigger_webhook__website_url
+msgid "Website Url"
+msgstr "网站网址"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__trg_date_calendar_id
+msgid ""
+"When calculating a day-based timed condition, it is possible to use a "
+"calendar to compute the date based on working days."
+msgstr "计算基于天的定时条件时，可以使用日历根据工作日计算日期。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__sequence
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__sequence
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__sequence
+msgid ""
+"When dealing with multiple actions, the execution order is based on the "
+"sequence. Low number means high priority."
+msgstr "处理多个操作时，执行顺序基于顺序。数字越少表示优先级越高。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__trg_date_id
+msgid ""
+"When should the condition be triggered.\n"
+"                                  If present, will be checked by the "
+"scheduler. If empty, will be checked at creation and update."
+msgstr ""
+"何时应触发条件。\n"
+"                                  如果存在，将由调度程序检查。如果为空，将在创建和更新时进行检查。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__active
+msgid "When unchecked, the rule is hidden and will not be executed."
+msgstr "如果未选中，规则将被隐藏，并且不会执行。"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_trigger_automation__code
+#: model:ir.model.fields,help:sync.field_sync_trigger_cron__code
+#: model:ir.model.fields,help:sync.field_sync_trigger_webhook__code
+msgid ""
+"Write Python code that the action will execute. Some variables are available "
+"for use; help about python expression is given in the help tab."
+msgstr "编写操作将执行的 Python 代码。一些变量可供使用;有关python表达式的帮助在帮助选项卡中给出。"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "You are welcome to make a contribution to our"
+msgstr "欢迎您为我们的贡献"
+
+#. module: sync
+#: code:addons\sync\models\sync_project.py:0
+#, python-format
+msgid "You cannot use %s with getattr"
+msgstr "不能将 %s 与 getattr 一起使用"
+
+#. module: sync
+#: code:addons\sync\models\sync_project.py:0
+#, python-format
+msgid "You cannot use %s with setattr"
+msgstr "不能将 %s 与 setattr 一起使用"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid ""
+"Your contribution will make other Odoo users happy\n"
+"                            <span class=\"fa fa-smile-o\"/>\n"
+"                            , while"
+msgstr ""
+"您的贡献将使其他Odoo用户满意\n"
+"                            <span class=“fa fa-smile-o”/>\n"
+"                            而"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "a bug report"
+msgstr "错误报告"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "a feature request"
+msgstr "功能请求"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "a new module"
+msgstr "新模块"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid ""
+"an issue with the data xml file attached (due to\n"
+"                                    github restrictions you need to use file "
+"ended with\n"
+"                                    .txt:"
+msgstr ""
+"附加的数据 xml 文件存在问题（由于\n"
+"                                    github 限制你需要使用的文件结束\n"
+"                                    .txt："
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "an update to existing module"
+msgstr "对现有模块的更新"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_trigger_webhook__webhook_type__json
+msgid "application/json"
+msgstr "application/json"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_trigger_webhook__webhook_type__http
+msgid "application/x-www-form-urlencoded"
+msgstr "application/x-www-form-urlencoded"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_make_module__state__choose
+msgid "choose"
+msgstr "选择"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_make_module__author_name
+msgid "e.g. Ivan Yelizariev"
+msgstr "例如 伊万·叶利扎里耶夫"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_project__name
+msgid "e.g. Legacy Migration or eCommerce Synchronization"
+msgstr "例如，传统迁移或电子商务同步"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_task__name
+msgid "e.g. Sync Products"
+msgstr "例如：同步产品"
+
+#. module: sync
+#: model:ir.model.fields,help:sync.field_sync_make_module__author_url
+msgid "e.g. https://twitter.com/yelizariev"
+msgstr "例如 https://twitter.com/yelizariev"
+
+#. module: sync
+#: model:ir.model.fields.selection,name:sync.selection__sync_make_module__state__get
+msgid "get"
+msgstr "获取"
+
+#. module: sync
+#: code:addons\sync\models\sync_link.py:0
+#, python-format
+msgid "get_link found multiple links. Use search_links for many2many relations"
+msgstr "get_link找到多个链接。将search_links用于多2多个关系"
+
+#. module: sync
+#: code:addons\sync\models\sync_job.py:0
+#, python-format
+msgid "infinity"
+msgstr "无限"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "open source integration addons"
+msgstr "开源集成插件"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "we will check bug reports"
+msgstr "我们将检查错误报告"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "we will document the modules"
+msgstr "我们将记录模块"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "we will port modules to the new Odoo versions"
+msgstr "我们将模块移植到新的Odoo版本"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "we will test the updates"
+msgstr "我们将测试更新"
+
+#. module: sync
+#: model_terms:ir.ui.view,arch_db:sync.sync_make_module
+msgid "will assist you on it:"
+msgstr "将协助您："
+
